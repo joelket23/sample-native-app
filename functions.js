@@ -1,7 +1,7 @@
 // Initialize the application
 
 	EcwidApp.init({
-	  app_id: "sample-native-app", // use your application namespace
+	  app_id: "custom-app-69848592-3", // use your application namespace
 	  autoloadedflag: true, 
 	  autoheight: true
 	});
@@ -9,6 +9,7 @@
 	var storeData = EcwidApp.getPayload();
 
     var storeId = storeData.store_id;
+	console.log("this is storeid",storeId)
     var accessToken = storeData.access_token;
     var language = storeData.lang;
     var viewMode = storeData.view_mode;
